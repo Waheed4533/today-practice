@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Description</title>
+</head>
+<body>
+    <label for="shapeInput">Enter a shape: </label>
+    <input type="text" id="shapeInput">
+    <button id="submitButton">Submit</button>
+
+    <div id="output"></div>
+
+    <script>
+        function getShapeDescription(shape) {
+            switch (shape) {
+                case "circle":
+                    return "A round shape";
+                case "square":
+                    return "A four-sided shape with equal sides";
+                case "triangle":
+                    return "A three-sided shape";
+                default:
+                    return "Unknown shape";
+            }
+        }
+
+        document.getElementById("submitButton").addEventListener("click", function () {
+            const shapeInput = document.getElementById("shapeInput").value;
+            const description = getShapeDescription(shapeInput);
+            const outputDiv = document.getElementById("output");
+            outputDiv.textContent = description;
+        });
+    </script>
+</body>
+</html>

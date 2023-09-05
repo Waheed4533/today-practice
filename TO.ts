@@ -12,10 +12,5 @@ let username = "bilal";
 // }
 
 
-//now ternary.O
-// username == "bilal" 
-// ? console.log("loggedin")
-// : console.log("Invalid username")
-
-
-
+// now ternary.O
+username == "tehsin" ? console.log("loggedin"): console.log("Invalid username")
