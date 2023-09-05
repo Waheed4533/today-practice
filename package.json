@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.5.9"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }

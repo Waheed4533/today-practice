@@ -1,4 +1,3 @@
-"use strict";
 let a;
 a = 2; //narrowing
 console.log(a); //picked it as a number if we write . it will give us options related
@@ -39,3 +38,4 @@ function getShapeDescription(shape) {
             return "Unknown shape"; // TypeScript ensures all cases are handled.
     }
 }
+export {};
