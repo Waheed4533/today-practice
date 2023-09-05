@@ -1,33 +1,31 @@
-let a: number|string;
-a=2//narrowing
-console.log(a);//picked it as a number if we write . it will give us options related
-//to numbers
-a="waheed";
-console.log(a);//picked it as a number if we write . it will give us options related
-//to string
-function typefind(val:string|number){
-    if (typeof val === "string"){
-        return val.toLowerCase()
-    }
-   else{
-   return("Here's Your number");
-    }
-}
-let b=typefind(6)
-console.log(b);
-
-// second example
-
-function typeId(ID:string|null){
-    if (typeof ID === "string"){
-        return ID.toLowerCase()
-    }
-   else{
-   return("Please give ID");
-    }
-}
-let c=typeId(null)
-console.log(c);
+// let a: number|string;
+// a=2//narrowing
+// console.log(a);//picked it as a number if we write . it will give us options related
+// //to numbers
+// a="waheed";
+// console.log(a);//picked it as a number if we write . it will give us options related
+// //to string
+// function typefind(val:string|number){
+//     if (typeof val === "string"){
+//         return val.toLowerCase()
+//     }
+//    else{
+//    return("Here's Your number");
+//     }
+// };
+// let b=typefind(6)
+// console.log(b);
+// // second example
+// function typeId(ID:string|null){
+//     if (typeof ID === "string"){
+//         return ID.toLowerCase()
+//     }
+//    else{
+//    return("Please give ID");
+//     }
+// };
+// let c=typeId("ARSAL")
+// console.log(c);
 
 // Advantages of typescript narrowing
 //TypeScript narrowing is a valuable feature that helps you write safer 
@@ -49,6 +47,15 @@ function getShapeDescription(shape: Shape): string {
       return "Unknown shape"; // TypeScript ensures all cases are handled.
   }
 }
+let prompt=require("prompt-sync")()
+let d=getShapeDescription(prompt("give shape   "))
+
+console.log(d);
+
+
+
+
+
 
 
 
